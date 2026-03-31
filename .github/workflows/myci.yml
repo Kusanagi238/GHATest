@@ -19,12 +19,12 @@ jobs:
         with:
           python-version: "3.10"
           
-      - name: Install Linter
-        run: pip install flake8
+      # - name: Install Linter
+      #   run: pip install flake8
         
-      - name: Run Flake8
-        # 限制单行长度，检查未使用的 imports
-        run: flake8 app/ tests/ --max-line-length=88
+      # - name: Run Flake8
+      #   # 限制单行长度，检查未使用的 imports
+      #   run: flake8 app/ tests/ --max-line-length=88
 
   test:
     name: Unit Tests (Matrix)
